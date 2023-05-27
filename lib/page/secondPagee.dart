@@ -24,40 +24,9 @@ class _secondpageeState extends State<secondpagee> {
           SingleChildScrollView(
             child: Column(
               children: [
-                Container(
-                    height: 125,
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 110, 39, 176),
-                        borderRadius:
-                            BorderRadius.only(bottomRight: Radius.circular(60))),
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 50.0, left: 20),
-                      child: Row(
-                        children: [
-                          GestureDetector(
-                            onTap: (){
-                              Navigator.pop(context);
-                            },
-                            child: Icon(
-                              Icons.arrow_back_ios_new,
-                              color: Colors.white,
-                              size: 20,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 15,
-                          ),
-                          Text("Tips & Topics Details",
-                              style: GoogleFonts.ptSans(
-                                  fontSize: 18,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600))
-                        ],
-                      ),
-                    )),
                 Padding(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 25.0, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 160.0, horizontal: 20),
                   child: Column(
                     children: [
                       Column(
@@ -158,6 +127,42 @@ class _secondpageeState extends State<secondpagee> {
               ],
             ),
           ),
+
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+                      height: 125,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 110, 39, 176),
+                          borderRadius:
+                              BorderRadius.only(bottomRight: Radius.circular(60))),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 50.0, left: 20),
+                        child: Row(
+                          children: [
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.pop(context);
+                              },
+                              child: Icon(
+                                Icons.arrow_back_ios_new,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text("Tips & Topics Details",
+                                style: GoogleFonts.ptSans(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600))
+                          ],
+                        ),
+                      )),
+          ),
+
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
@@ -169,7 +174,7 @@ class _secondpageeState extends State<secondpagee> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: 300,
+                      width: MediaQuery.of(context).size.width/1.35,
                       height: 50,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
