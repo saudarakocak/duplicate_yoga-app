@@ -1,9 +1,5 @@
 // ignore: unused_import
 // ignore_for_file: prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables
-
-import 'package:duplicate_yoga/component/PopularCourses.dart';
-import 'package:duplicate_yoga/component/ProgramsMaster.dart';
-import 'package:duplicate_yoga/component/miniComponent.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
