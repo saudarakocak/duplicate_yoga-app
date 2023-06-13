@@ -4,6 +4,7 @@
 import 'package:duplicate_yoga/component/PopularCourses.dart';
 import 'package:duplicate_yoga/component/ProgramsMaster.dart';
 import 'package:duplicate_yoga/component/miniComponent.dart';
+import 'package:duplicate_yoga/page/apiPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -51,7 +52,8 @@ class _firstPageState extends State<firstPage> {
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 20, left: 20, top: 125.0),
+                  padding:
+                      const EdgeInsets.only(right: 20, left: 20, top: 125.0),
                   child: Column(
                     children: [
                       //search bar
@@ -83,7 +85,7 @@ class _firstPageState extends State<firstPage> {
                       SizedBox(
                         height: 25,
                       ),
-      
+
                       //mini content
                       Row(
                         children: [
@@ -134,11 +136,11 @@ class _firstPageState extends State<firstPage> {
                           miniContent(title: "Most Popular", chosen: false),
                         ],
                       ),
-      
+
                       SizedBox(
                         height: 15,
                       ),
-      
+
                       //Popular Courses
                       Row(
                         children: [
@@ -166,29 +168,32 @@ class _firstPageState extends State<firstPage> {
                         width: 20,
                       ),
                       PopularCourses(
-                          title:
-                              "15 Minute yoga practice the\nbeginner in 30 days",
-                          type: "Trainning",
-                          time: "Feb 15, 2020",
-                          gambar: "images/elastic.jpg",),
+                        title:
+                            "15 Minute yoga practice the\nbeginner in 30 days",
+                        type: "Trainning",
+                        time: "Feb 15, 2020",
+                        gambar: "images/elastic.jpg",
+                      ),
                       SizedBox(
                         width: 15,
                       ),
                       PopularCourses(
-                          title:
-                              "15 Minute yoga practice the\nbeginner in 30 days",
-                          type: "Trainning",
-                          time: "Feb 15, 2020",
-                          gambar: "images/elastic2.jpg",),
+                        title:
+                            "15 Minute yoga practice the\nbeginner in 30 days",
+                        type: "Trainning",
+                        time: "Feb 15, 2020",
+                        gambar: "images/elastic2.jpg",
+                      ),
                       SizedBox(
                         width: 15,
                       ),
                       PopularCourses(
-                          title:
-                              "15 Minute yoga practice the\nbeginner in 30 days",
-                          type: "Trainning",
-                          time: "Feb 15, 2020",
-                          gambar: "images/elastic.jpg",),
+                        title:
+                            "15 Minute yoga practice the\nbeginner in 30 days",
+                        type: "Trainning",
+                        time: "Feb 15, 2020",
+                        gambar: "images/elastic.jpg",
+                      ),
                       SizedBox(
                         width: 20,
                       ),
@@ -240,7 +245,7 @@ class _firstPageState extends State<firstPage> {
                 SizedBox(
                   height: 10,
                 ),
-      
+
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: Column(
@@ -260,29 +265,56 @@ class _firstPageState extends State<firstPage> {
                       SizedBox(
                         height: 15,
                       ),
-      
+
                       //content
                       ProgramsMaster(
-                          title: "30 day yoga challenge",
-                          title2: "Ralph Edwards",
-                          title3: "Level 5",
-                          gambar: "images/elastic2.jpg",),
+                        title: "30 day yoga challenge",
+                        title2: "Ralph Edwards",
+                        title3: "Level 5",
+                        gambar: "images/elastic2.jpg",
+                      ),
                       SizedBox(
                         height: 15,
                       ),
                       ProgramsMaster(
-                          title: "30 day yoga challenge",
-                          title2: "Ralph Edwards",
-                          title3: "Level 5",
-                          gambar: "images/elastic2.jpg",),
+                        title: "30 day yoga challenge",
+                        title2: "Ralph Edwards",
+                        title3: "Level 5",
+                        gambar: "images/elastic2.jpg",
+                      ),
                       SizedBox(
                         height: 15,
                       ),
                       ProgramsMaster(
-                          title: "30 day yoga challenge",
-                          title2: "Ralph Edwards",
-                          title3: "Level 5",
-                          gambar: "images/elastic2.jpg",),
+                        title: "30 day yoga challenge",
+                        title2: "Ralph Edwards",
+                        title3: "Level 5",
+                        gambar: "images/elastic2.jpg",
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => buildernya()));
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white, ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Text("Lihat Data API",
+                                style: GoogleFonts.ptSans(
+                                    fontSize: 18,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600)),
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         height: 15,
                       ),

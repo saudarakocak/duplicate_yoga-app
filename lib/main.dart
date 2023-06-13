@@ -1,3 +1,4 @@
+import 'package:duplicate_yoga/page/apiPage.dart';
 import 'package:duplicate_yoga/page/firstPage.dart';
 import 'package:duplicate_yoga/page/secondPagee.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const firstPage(),
+      home: firstPage(),
     );
   }
 }
