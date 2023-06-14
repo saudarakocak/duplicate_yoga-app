@@ -303,14 +303,21 @@ class _firstPageState extends State<firstPage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black12,
+                                spreadRadius: 1,
+                                blurRadius: 1
+                              )
+                            ],
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.white, ),
                           child: Padding(
                             padding: const EdgeInsets.all(15.0),
-                            child: Text("Lihat Data API",
+                            child: Text("Lihat Semua User",
                                 style: GoogleFonts.ptSans(
                                     fontSize: 18,
-                                    color: Colors.black,
+                                    color: Colors.purple,
                                     fontWeight: FontWeight.w600)),
                           ),
                         ),
